@@ -16,7 +16,7 @@
             <div class="header__container">
                 <div class="header__body">
                     <a href="#" class="header__logo__with__burger">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/_header/logo.png">
                     </a>
                     <div class="header__burger">
                         <span>
@@ -36,7 +36,7 @@
                             </li>
                             <li>
                                 <a href="#" class="header__logo">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/_header/logo.png">
                                 </a>
                             </li>
                             <li>

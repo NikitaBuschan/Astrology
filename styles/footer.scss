@@ -1,0 +1,398 @@
+@import "_nullable";
+@import "_globals";
+
+footer {
+   position: relative;
+   height: 200px;
+   width: 100%;
+   background: #221a2d;
+   z-index: 1;
+}
+
+.info {
+   color: #ffffff;
+   &__container {
+      margin: 0 auto;
+      max-width: 1400px;
+      padding: 0 100px;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+         margin-top: 20px;
+
+         a {
+            display: block;
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            opacity: 0.9;
+         }
+         a:hover {
+            color: rgb(117, 117, 117);
+         }
+         a:focus {
+            text-decoration: underline;
+         }
+         .email {
+            line-height: 130%;
+            font-weight: 400;
+            font-size: 20px;
+         }
+         .phone {
+            font-weight: 600;
+            font-size: 24px;
+            margin-top: 20px;
+            line-height: 170%;
+         }
+         h3 {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            opacity: 0.9;
+         }
+
+         h5 {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 170%;
+            opacity: 0.9;
+            margin-top: 20px;
+         }
+      }
+      .right {
+         text-align: right;
+         h3 {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 170%;
+            opacity: 0.9;
+         }
+         a {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 130%;
+            color: #ffffff;
+            opacity: 0.9;
+         }
+         .deal {
+            display: flex;
+            flex-direction: column;
+            a {
+               margin-top: 15px;
+            }
+            a:hover {
+               color: rgb(117, 117, 117);
+            }
+            a:focus {
+               text-decoration: underline;
+            }
+         }
+      }
+
+      .contact {
+         width: fit-content;
+         display: flex;
+         margin-left: auto;
+
+         a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #f2bb59;
+            border-radius: 50%;
+            margin: 20px 10px;
+            height: 43px;
+            width: 43px;
+            .icon {
+               fill: #f2bb59;
+               height: 27px;
+               width: 27px;
+            }
+         }
+         a:last-child {
+            margin-right: 0px;
+            .icon {
+               height: 31px;
+               width: 31px;
+            }
+         }
+         a:hover {
+            border: 2px solid white;
+            .icon {
+               fill: white;
+            }
+         }
+         a:focus {
+            border: 2px solid white;
+         }
+      }
+   }
+
+   @media (max-width: $md1 + px) {
+      &__container {
+         max-width: 1130px;
+         padding: 0 70px;
+      }
+   }
+
+   @media (max-width: 1200px) {
+      &__container {
+         .left {
+            h5 {
+               line-height: 130%;
+               font-size: 14px;
+            }
+         }
+
+         .right {
+            .deal {
+               a {
+                  margin-top: 13px;
+               }
+            }
+         }
+      }
+   }
+
+   @media (max-width: $md2 + px) {
+      &__container {
+         .left {
+            width: 360px;
+            h3,
+            .email {
+               font-size: 18px;
+            }
+            .phone {
+               font-size: 20px;
+               margin-top: 10px;
+            }
+            h5 {
+               margin-top: 13px;
+            }
+         }
+         .right {
+            .contact {
+               a {
+                  margin: 15px 10px;
+                  height: 39px;
+                  width: 39px;
+                  .icon {
+                     height: 23px;
+                     width: 23px;
+                  }
+               }
+               a:last-child {
+                  margin-right: 0px;
+                  .icon {
+                     height: 27px;
+                     width: 27px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   @media (max-width: $md3 + px) {
+      &__container {
+         padding: 0 20px;
+         .left {
+            width: 220px;
+            h3,
+            .email {
+               font-size: 15px;
+            }
+            .phone {
+               margin-top: 16px;
+               font-size: 16px;
+            }
+            h5 {
+               font-size: 13px;
+               margin-top: 10px;
+               line-height: 100%;
+            }
+         }
+         .right {
+            width: 220px;
+            .deal {
+               a {
+                  font-size: 14px;
+               }
+            }
+         }
+      }
+   }
+
+   @media (max-width: $md4 + px) {
+      &__container {
+         .left {
+            width: auto;
+            h3 {
+               display: none;
+            }
+            .email {
+               font-size: 12px;
+            }
+            .phone {
+               font-size: 13px;
+               margin-top: 5px;
+            }
+            h5 {
+               width: 90px;
+               font-size: 10px;
+            }
+         }
+         .right {
+            width: auto;
+            margin-top: 20px;
+            .contact {
+               a {
+                  margin: 0px 10px;
+                  height: 22px;
+                  width: 22px;
+                  border: 1px solid #f2bb59;
+                  .icon {
+                     height: 14px;
+                     width: 14px;
+                  }
+               }
+               a:last-child {
+                  margin-right: 0px;
+                  .icon {
+                     height: 17px;
+                     width: 17px;
+                  }
+               }
+            }
+            .deal {
+               a {
+                  font-size: 12px;
+                  margin-top: 12px;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: $md2 + px) {
+   footer {
+      height: 170px;
+   }
+}
+
+/* Popup */
+
+.popup {
+   padding-top: 100px;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: all 0.8s ease 0s;
+   z-index: 1000;
+}
+
+@media (max-width: $md3 + px) {
+   .popup {
+      padding-top: 60px;
+   }
+}
+
+@media (max-width: $md4 + px) {
+   .popup {
+      padding-top: 50px;
+   }
+}
+
+.popup.open {
+   opacity: 1;
+   visibility: visible;
+}
+
+.popup.open .popup__content {
+   transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+   opacity: 1;
+}
+
+.popup__area {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.popup__body {
+   min-height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 30px 10px;
+}
+.popup__content {
+   background-color: #fff;
+   color: black;
+   max-width: 800px;
+   padding: 30px;
+   position: relative;
+   transition: all 0.8s ease 0s;
+   opacity: 0;
+   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+.popup__content_image {
+   padding: 0;
+}
+.popup__image img {
+   max-width: 100%;
+   vertical-align: top;
+}
+
+.popup__close {
+   position: absolute;
+   right: 20px;
+   top: 10px;
+   font-size: 20px;
+   color: black;
+   text-decoration: none;
+}
+.popup__text p {
+   margin: 10px 0px;
+   font-weight: 400;
+   line-height: 140%;
+}
+.popup__text ul {
+   padding-left: 40px;
+}
+.popup__text li {
+   list-style: disc;
+   line-height: 140%;
+}
+.popup__text h1 {
+   font-size: 20px;
+   padding-top: 10px;
+}
+
+.popup__text h2 {
+   font-size: 16px;
+   font-weight: 500;
+   padding: 20px 0px;
+}
+.popup__text .popup_1_text {
+   padding: 20px 0px 5px 0px;
+}
