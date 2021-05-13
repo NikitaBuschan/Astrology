@@ -76,6 +76,38 @@
       </siv>
 </section>
 
+<section class="two">
+   <picture>
+      <source type="image/webp"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_two/block_two_mobile.webp"
+         media="(max-width: 768px)">
+      <source type="image/jpeg"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_two/block_two_mobile.png"
+         media="(max-width: 768px)">
+      <source type="image/webp"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_two/block_two.webp">
+      <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_two/block_two.png">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/home/block_two/block_two.png" alt="">
+   </picture>
+   <div class="two__block">
+      <div class="two__block_white-line">
+         <div class="container">
+            <div class="two__block_title">
+               <h2>ГЛАВНЫЙ СПЕЦИАЛИСТ</h2>
+               <p>Это сайт профессионального Джйотиш Астролога — Терапевта Нелли Фардановой. Здесь вы сможете
+                  узнать что такое Джойтиш астрология, окунуться в восточную ведическую астрологию, познать
+                  себя, раскрыть свой потенциал.
+               </p>
+               <div class="two__block_buttons">
+                  <a href="#">Записаться на консультацию</a>
+                  <a href="#">Подробнее о специалисте</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
 
 
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/home.js"></script>
