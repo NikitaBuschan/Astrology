@@ -108,6 +108,162 @@
    </div>
 </section>
 
+<section class="three">
+   <div class="three__block">
+      <div class="vertical_line"></div>
+
+      <div class="three__block_desctop">
+         <div class="three__block_card">
+            <picture>
+               <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/01.webp">
+               <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/01.png">
+               <img src="<?php echo get_template_directory_uri(); ?>/images/home/cards/01.png" alt="">
+            </picture>
+
+            <div class="three__block_card-title">
+               <h3>
+                  Познать свое тело и прийти к балансу
+                  в астрологическом фитнесе
+               </h3>
+               <a href="#">Просмотреть программу</a>
+            </div>
+         </div>
+         <div class="three__block_inner-block">
+            <div class="three__block_card">
+               <picture>
+                  <source type="image/webp"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/02.webp">
+                  <source type="image/png"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/02.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/cards/02.png" alt="">
+               </picture>
+
+               <div class="three__block_card-title">
+                  <h3>
+                     Стать профессиональным
+                     астрологом
+                  </h3>
+                  <a href="#">Просмотреть программу</a>
+               </div>
+            </div>
+            <div class="three__block_card">
+               <picture>
+                  <source type="image/webp"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/03.webp">
+                  <source type="image/png"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/03.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/cards/03.png" alt="">
+               </picture>
+               <div class="three__block_card-title">
+                  <h3>
+                     Смотреть все программы
+                     и обучение
+                  </h3>
+                  <a href="#">Просмотреть программу</a>
+               </div>
+            </div>
+         </div>
+         <div class="three__block_card">
+            <picture>
+               <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/04.webp">
+               <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/04.png">
+               <img src="<?php echo get_template_directory_uri(); ?>/images/home/cards/04.png" alt="">
+            </picture>
+            <div class="three__block_card-title">
+               <h3>
+                  Погрузиться в мир знаний в закрытом клубе астрологии
+               </h3>
+               <a href="#">Просмотреть программу</a>
+            </div>
+         </div>
+      </div>
+
+
+      <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/carousel/owl.carousel.min.css">
+
+      <style>
+         .owl-carousel {
+            margin-top: 14px;
+         }
+
+         .owl-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+         }
+      </style>
+
+      <div class="three__block_mobile">
+         <div class="owl-carousel">
+            <div class="three__block_card">
+               <picture>
+                  <source type="image/webp"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/01.webp">
+                  <source type="image/png"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/01.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/cards/01.png" alt="">
+               </picture>
+               <div class="three__block_card-title">
+                  <h3>
+                     Познать свое тело и прийти к балансу
+                     в астрологическом фитнесе
+                  </h3>
+                  <a href="#">Просмотреть программу</a>
+               </div>
+            </div>
+            <div class="three__block_card">
+               <picture>
+                  <source type="image/webp"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/02.webp">
+                  <source type="image/png"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/02.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/cards/02.png" alt="">
+               </picture>
+               <div class="three__block_card-title">
+                  <h3>
+                     Стать профессиональным
+                     астрологом
+                  </h3>
+                  <a href="#">Просмотреть программу</a>
+               </div>
+            </div>
+            <div class="three__block_card">
+               <picture>
+                  <source type="image/webp"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/03.webp">
+                  <source type="image/png"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/03.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/cards/03.png" alt="">
+               </picture>
+               <div class="three__block_card-title">
+                  <h3>
+                     Смотреть все программы
+                     и обучение
+                  </h3>
+                  <a href="#">Просмотреть программу</a>
+               </div>
+            </div>
+            <div class="three__block_card">
+               <picture>
+                  <source type="image/webp"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/04.webp">
+                  <source type="image/png"
+                     srcset="<?php echo get_template_directory_uri(); ?>/images/home/cards/04.png">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/home/cards/04.png" alt="">
+               </picture>
+               <div class="three__block_card-title">
+                  <h3>
+                     Погрузиться в мир знаний в закрытом клубе астрологии
+                  </h3>
+                  <a href="#">Просмотреть программу</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
 
 
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/home.js"></script>
