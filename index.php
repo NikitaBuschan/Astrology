@@ -264,6 +264,303 @@
    </div>
 </section>
 
+<section class="four">
+   <div class="block">
+      <picture>
+         <source type="image/webp"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_four/block_four_mobile.webp"
+         media="(max-width: 480px)">
+      <source type="image/png"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_four/block_four_mobile.png"
+         media="(max-width: 480px)">
+         <source type="image/webp"
+            srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_four/block_four_tablet.webp"
+            media="(max-width: 768px)">
+         <source type="image/png"
+            srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_four/block_four_tablet.png"
+            media="(max-width: 768px)">
+         <source type="image/webp"
+            srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_four/block_four.webp">
+         <source type="image/png"
+            srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_four/block_four.png">
+
+         <img src="<?php echo get_template_directory_uri(); ?>/images/home/block_four/block_four.png" alt="">
+      </picture>
+      <div class="block__title">
+         <h1>Отзывы о моей работе</h1>
+      </div>
+      <div class="block__comments">
+         <button class="prev">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/left.png" alt="left arrow">
+         </button>
+
+         <div class="block__comments_info">
+
+            <div class="carousel">
+               <div class="comment_line">
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>На обучение астрологии попала, после трех лет обучения в Академии Астрологии. Сравнивая
+                           обучения могу сказать, что три года в Академии нам начитывали теорию, практически без
+                           практики.
+                           Таким образом теорию то начитали, а что с ней делать дальше не рассказали. Нелли же дает
+                           теорию,
+                           которую подкрепляет примерами, а выдаваемое домашнее задание, помогает закрепить материал.
+                           Такой комплексный подход дает лучшее усвоение материала и понимание астрологии. Но самое
+                           ценное в обучении это то что, здесь действительно учат интерпретировать карты и раскладывать
+                           все
+                           по
+                           полочкам.
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/01.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Наталья Гребешкова</h3>
+                              <h4>https://vk.com/124679</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>
+                           Очень понравились курсы. Много полезной информации и никакой воды. Давно хотела найти
+                           что-то подобное, обязательно расскажу всем друзьям, спасибо за ваши труды!
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/02.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Анастасия Титова</h3>
+                              <h4>https://vk.com/567482</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="comment_line">
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>
+                           Благодаря вам смогла пересилить себя и устроиться на новую работу!
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/03.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Елена Кошкина</h3>
+                              <h4>https://vk.com/9764892</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>
+                           Хочу выразить огромную благодарность Нелии за консультацию!
+                           Во первых стоит отметить, что она очень приятный и тактичный в общении человек, что очень
+                           важно так как приходится раскрывать перед астрологом те части своей жизни, которые и друзьям
+                           не всегда скажешь. Во вторых, мне импонирует очень логичная и четкая подача без лишней воды и
+                           обзор
+                           проблемы ранжированы по степени их значимости. Большое спасибо за вашу работу.
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/04.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Надежда Дуброва</h3>
+                              <h4>https://vk.com/55487</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="comment_line">
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>На обучение астрологии попала, после трех лет обучения в Академии Астрологии. Сравнивая
+                           обучения могу сказать, что три года в Академии нам начитывали теорию, практически без
+                           практики.
+                           Таким образом теорию то начитали, а что с ней делать дальше не рассказали. Нелли же дает
+                           теорию,
+                           которую подкрепляет примерами, а выдаваемое домашнее задание, помогает закрепить материал.
+                           Такой комплексный подход дает лучшее усвоение материала и понимание астрологии. Но самое
+                           ценное в обучении это то что, здесь действительно учат интерпретировать карты и раскладывать
+                           все
+                           по
+                           полочкам.
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/01.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Наталья Гребешкова</h3>
+                              <h4>https://vk.com/124679</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>
+                           Очень понравились курсы. Много полезной информации и никакой воды. Давно хотела найти
+                           что-то подобное, обязательно расскажу всем друзьям, спасибо за ваши труды!
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/02.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Анастасия Титова</h3>
+                              <h4>https://vk.com/567482</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="owl-carousel owl-carousel_comment">
+               <div class="comment_line">
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>На обучение астрологии попала, после трех лет обучения в Академии Астрологии. Сравнивая
+                           обучения могу сказать, что три года в Академии нам начитывали теорию, практически без
+                           практики.
+                           Таким образом теорию то начитали, а что с ней делать дальше не рассказали. Нелли же дает
+                           теорию,
+                           которую подкрепляет примерами, а выдаваемое домашнее задание, помогает закрепить материал.
+                           Такой комплексный подход дает лучшее усвоение материала и понимание астрологии. Но самое
+                           ценное в обучении это то что, здесь действительно учат интерпретировать карты и раскладывать
+                           все
+                           по
+                           полочкам.
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/01.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Наталья Гребешкова</h3>
+                              <h4>https://vk.com/124679</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>
+                           Очень понравились курсы. Много полезной информации и никакой воды. Давно хотела найти
+                           что-то подобное, обязательно расскажу всем друзьям, спасибо за ваши труды!
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/02.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Анастасия Титова</h3>
+                              <h4>https://vk.com/567482</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="comment_line">
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>
+                           Благодаря вам смогла пересилить себя и устроиться на новую работу!
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/03.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Елена Кошкина</h3>
+                              <h4>https://vk.com/9764892</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>
+                           Хочу выразить огромную благодарность Нелии за консультацию!
+                           Во первых стоит отметить, что она очень приятный и тактичный в общении человек, что очень
+                           важно так как приходится раскрывать перед астрологом те части своей жизни, которые и друзьям
+                           не всегда скажешь. Во вторых, мне импонирует очень логичная и четкая подача без лишней воды и
+                           обзор
+                           проблемы ранжированы по степени их значимости. Большое спасибо за вашу работу.
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/04.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Надежда Дуброва</h3>
+                              <h4>https://vk.com/55487</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="comment_line">
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>На обучение астрологии попала, после трех лет обучения в Академии Астрологии. Сравнивая
+                           обучения могу сказать, что три года в Академии нам начитывали теорию, практически без
+                           практики.
+                           Таким образом теорию то начитали, а что с ней делать дальше не рассказали. Нелли же дает
+                           теорию,
+                           которую подкрепляет примерами, а выдаваемое домашнее задание, помогает закрепить материал.
+                           Такой комплексный подход дает лучшее усвоение материала и понимание астрологии. Но самое
+                           ценное в обучении это то что, здесь действительно учат интерпретировать карты и раскладывать
+                           все
+                           по
+                           полочкам.
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/01.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Наталья Гребешкова</h3>
+                              <h4>https://vk.com/124679</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="comment">
+                     <div class="comment__info">
+                        <p>
+                           Очень понравились курсы. Много полезной информации и никакой воды. Давно хотела найти
+                           что-то подобное, обязательно расскажу всем друзьям, спасибо за ваши труды!
+                        </p>
+                        <div class="comment__info_person">
+                           <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/02.webp" alt="">
+                           <div class="comment__info_data">
+                              <h3>Анастасия Титова</h3>
+                              <h4>https://vk.com/567482</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <button class="next">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/home/comments/right.png" alt="right arrow">
+         </button>
+      </div>
+   </div>
+
+   <script>
+
+      $(document).ready(function () {
+         $(".owl-carousel").owlCarousel({
+            items: 3,
+            margin: 0,
+            stagePadding: 10,
+            autoWidth: true
+         });
+      });
+
+   </script>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+   <script src="<?php echo get_template_directory_uri(); ?>/carousel/owl.carousel.min.js"></script>
+</section>
+
 
 
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/home.js"></script>
