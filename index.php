@@ -612,6 +612,30 @@
    </div>
 </section>
 
+<section class="six">
+   <picture>
+      <source type="image/webp"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_six/block_six_mobile.webp"
+         media="(max-width: 768px)">
+      <source type="image/jpg"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_six/block_six_mobile.jpg"
+         media="(max-width: 768px)">
+      <source type="image/webp"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_six/block_six.webp">
+      <source type="image/jpeg"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_six/block_six.jpg">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/home/block_six/block_six.jpg" alt="">
+   </picture>
+
+   <div class="six__block">
+      <div class="six__block_text">
+         <div class="inner">
+            <h3>Помогать людям - мое предназначение
+               и я счастлива, что могу делать это!</h3>
+            <h4>Нелли Фарданова</h4>
+         </div>
+      </div>
+</section>
 
 
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/home.js"></script>
