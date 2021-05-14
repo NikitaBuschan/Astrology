@@ -561,6 +561,57 @@
    <script src="<?php echo get_template_directory_uri(); ?>/carousel/owl.carousel.min.js"></script>
 </section>
 
+<section class="five">
+   <picture>
+      <source type="image/webp"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_five/background_five_mobile.webp"
+         media="(max-width: 768px)">
+      <source type="image/png"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_five/background_five_mobile.png"
+         media="(max-width: 768px)">
+      <source type="image/webp"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_five/background_five.webp">
+      <source type="image/png"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_five/background_five.png">
+      <img class="background"
+         src="<?php echo get_template_directory_uri(); ?>/images/home/block_five/background_five.png" alt="">
+   </picture>
+   <picture>
+      <source type="image/webp"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_five/block_five.webp"
+         media="(max-width: 768px)">
+      <source type="image/jpg"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_five/block_five.png"
+         media="(max-width: 768px)">
+      <source type="image/webp"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_five/block_five.webp">
+      <source type="image/png"
+         srcset="<?php echo get_template_directory_uri(); ?>/images/home/block_five/block_five.png">
+      <img class="five_img" src="<?php echo get_template_directory_uri(); ?>/images/home/block_five/block_five.png"
+         alt="">
+   </picture>
+   <div class="container">
+      <div class="five__block">
+         <h1>А вы знали?</h1>
+
+         <div class="five__block_list">
+            <h3>В Джйотиш Астрологии Знак
+               зодиака определяется по:</h3>
+            <ul>
+               <li>точному времени</li>
+               <li>дате</li>
+               <li>месту рождения</li>
+            </ul>
+         </div>
+
+         <h3>
+            Ведический знак зодиака может отличаться от привычного гороскопа.
+         </h3>
+         <a href="#">Узнать свой знак зодиак</a>
+      </div>
+   </div>
+</section>
+
 
 
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/home.js"></script>
