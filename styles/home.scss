@@ -1,0 +1,678 @@
+@import "_globals";
+
+@keyframes fade-in {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes up-element {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0px);
+   }
+}
+
+body.lock {
+   overflow: hidden;
+}
+
+img,
+picture {
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.wrapper {
+   overflow: hidden;
+}
+
+section {
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+}
+
+.container {
+   margin: 0 auto;
+   max-width: 1400px;
+   padding: 0 100px;
+   z-index: 1;
+}
+
+@media (max-width: $md1 + px) {
+   .container {
+      max-width: 1130px;
+      padding: 0 70px;
+   }
+}
+
+@media (max-width: $md2 + px) {
+   .container {
+      padding: 0px 60px;
+      max-width: none;
+   }
+}
+
+@media (max-width: $md3 + px) {
+   .container {
+      padding: 0px 40px;
+      max-width: none;
+   }
+}
+
+@media (orientation: portrait) and (max-width: $md4 + px) {
+   .container {
+      padding: 0px 20px;
+   }
+}
+
+.main_background {
+   position: absolute;
+   z-index: -10;
+   height: 200vh;
+   width: 100%;
+   left: 0;
+   top: 0;
+}
+
+.one {
+   .ring {
+      position: absolute;
+      padding-top: 2vh;
+      right: -220px;
+      height: 120%;
+      width: auto;
+      animation: fade-in 1s ease-in-out;
+      z-index: -1;
+   }
+   &__block {
+      padding-top: 26vh;
+      width: fit-content;
+      &_title {
+         color: #f5f5f5;
+         text-transform: uppercase;
+         h2 {
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            letter-spacing: 0.1em;
+            margin-bottom: 2vh;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+         }
+         h1 {
+            font-family: "Philosopher", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 60px;
+            margin-bottom: 8vh;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+         }
+      }
+      &_data {
+         margin-bottom: 8vh;
+         display: flex;
+         justify-content: flex-start;
+         position: relative;
+         text-align: center;
+         > div {
+            padding: 0px 20px;
+         }
+         > div:first-child {
+            padding: 0px 20px 0px 0px;
+         }
+         h2 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            font-size: 37px;
+            text-transform: uppercase;
+            color: #fcfcfc;
+            letter-spacing: 0;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+         }
+         h3 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+         }
+      }
+
+      &_buttons {
+         position: relative;
+         display: flex;
+
+         > a {
+            font-family: "Open Sans", sans-serif;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background: #f2bb59;
+            border-radius: 30px;
+            color: black;
+            width: 216px;
+            font-size: 18px;
+            margin-right: 40px;
+            transition: all 0.2s ease-in-out;
+            opacity: 0;
+         }
+         > a:hover {
+            background: none;
+            border: 2px solid white;
+            color: white;
+         }
+         > a:focus {
+            border: 2px solid white;
+         }
+         .contacts__info {
+            display: flex;
+            a {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               border: 3px solid #f2bb59;
+               border-radius: 50%;
+               margin: 0px 10px;
+               height: 50px;
+               width: 50px;
+               transition: all 0.2s ease-in-out;
+               opacity: 0;
+               .icon {
+                  fill: #f2bb59;
+                  height: 30px;
+                  width: 30px;
+                  transition: all 0.35s ease-in-out;
+               }
+            }
+            a:last-child .icon {
+               height: 35px;
+               width: 35px;
+            }
+            a:hover {
+               border: 3px solid white;
+               height: 60px;
+               width: 60px;
+               .icon {
+                  fill: white;
+                  height: 40px;
+                  width: 40px;
+               }
+            }
+            a:last-child:hover {
+               .icon {
+                  height: 44px;
+                  width: 44px;
+               }
+            }
+         }
+      }
+   }
+
+   @media (orientation: landscape) and (max-width: 2000px) and (min-height: 900px) {
+      .ring {
+         left: 40vw;
+      }
+   }
+
+   @media (orientation: landscape) and (max-width: $md1 + px) {
+      .ring {
+         opacity: 0.7;
+         right: -500px;
+      }
+      &__block {
+         &_title {
+            h2 {
+               font-size: 22px;
+            }
+            h1 {
+               font-size: 54px;
+            }
+         }
+         &_data {
+            h2 {
+               font-size: 34px;
+            }
+            h3 {
+               font-size: 14px;
+            }
+         }
+         &_buttons {
+            > a {
+               height: 44px;
+            }
+            .contacts__info {
+               a {
+                  height: 44px;
+                  width: 44px;
+                  border: 3px solid #f2bb59;
+                  .icon {
+                     height: 26px;
+                     width: 26px;
+                  }
+               }
+               a:last-child .icon {
+                  height: 30px;
+                  width: 30px;
+               }
+               a:hover {
+                  border: 3px solid white;
+                  height: 50px;
+                  width: 50px;
+                  .icon {
+                     fill: white;
+                     height: 30px;
+                     width: 30px;
+                  }
+               }
+               a:last-child:hover {
+                  .icon {
+                     height: 34px;
+                     width: 34px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   @media (orientation: landscape) and (max-width: $md2 + px) {
+      .ring {
+         right: -350px;
+      }
+      &__block {
+         &_title {
+            h2 {
+               font-size: 18px;
+            }
+            h1 {
+               font-size: 50px;
+            }
+         }
+         &_data {
+            h2 {
+               font-size: 30px;
+            }
+            h3 {
+               font-size: 12px;
+            }
+         }
+         &_buttons {
+            > a {
+               font-size: 16px;
+               width: 200px;
+               height: 38px;
+            }
+            .contacts__info {
+               a {
+                  height: 38px;
+                  width: 38px;
+                  .icon {
+                     height: 20px;
+                     width: 20px;
+                  }
+               }
+               a:last-child .icon {
+                  height: 24px;
+                  width: 24px;
+               }
+               a:hover {
+                  height: 44px;
+                  width: 44px;
+                  .icon {
+                     fill: white;
+                     height: 24px;
+                     width: 24px;
+                  }
+               }
+               a:last-child:hover {
+                  .icon {
+                     height: 28px;
+                     width: 28px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   @media (orientation: landscape) and (max-width: $md3 + px) {
+      .ring {
+         right: -350px;
+      }
+      &__block {
+         padding-top: 28vh;
+         &_title {
+            h2 {
+               font-size: 14px;
+            }
+            h1 {
+               font-size: 36px;
+            }
+         }
+         &_data {
+            h2 {
+               font-size: 22px;
+            }
+            h3 {
+               font-size: 10px;
+            }
+         }
+         &_buttons {
+            > a {
+               height: 30px;
+               width: 165px;
+               font-size: 14px;
+               margin-right: 30px;
+            }
+            .contacts__info {
+               a {
+                  height: 30px;
+                  width: 30px;
+                  border: 2px solid #f2bb59;
+                  .icon {
+                     height: 16px;
+                     width: 16px;
+                  }
+               }
+               a:last-child .icon {
+                  height: 19px;
+                  width: 19px;
+               }
+               a:hover {
+                  border: 3px solid white;
+                  height: 50px;
+                  width: 50px;
+                  .icon {
+                     fill: white;
+                     height: 30px;
+                     width: 30px;
+                  }
+               }
+               a:last-child:hover {
+                  .icon {
+                     height: 34px;
+                     width: 34px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   @media (orientation: landscape) and (max-width: $md4 + px) {
+      .ring {
+         right: -300px;
+      }
+      &__block {
+         &_title {
+            h2 {
+               font-size: 12px;
+            }
+            h1 {
+               font-size: 32px;
+            }
+         }
+         &_data {
+            > div {
+               padding: 0px 5px;
+            }
+            h2 {
+               font-size: 20px;
+            }
+            h3 {
+               font-size: 10px;
+            }
+         }
+      }
+   }
+
+   @media (orientation: portrait) and (min-width: 1000px) {
+      .ring {
+         opacity: 0.7;
+         right: -1400px;
+      }
+      &__block {
+         &_title {
+            h2 {
+               font-size: 26px;
+            }
+            h1 {
+               font-size: 62px;
+            }
+         }
+         &_data {
+            h2 {
+               font-size: 38px;
+            }
+            h3 {
+               font-size: 17px;
+            }
+         }
+         &_buttons {
+            > a {
+               height: 44px;
+            }
+            .contacts__info {
+               a {
+                  height: 44px;
+                  width: 44px;
+                  border: 3px solid #f2bb59;
+                  .icon {
+                     height: 26px;
+                     width: 26px;
+                  }
+               }
+               a:last-child .icon {
+                  height: 30px;
+                  width: 30px;
+               }
+               a:hover {
+                  border: 3px solid white;
+                  height: 50px;
+                  width: 50px;
+                  .icon {
+                     fill: white;
+                     height: 30px;
+                     width: 30px;
+                  }
+               }
+               a:last-child:hover {
+                  .icon {
+                     height: 34px;
+                     width: 34px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   @media (orientation: portrait) and (max-width: $md2 + px) {
+      .ring {
+         opacity: 0.7;
+         right: -900px;
+      }
+      &__block {
+         &_title {
+            h2 {
+               font-size: 22px;
+            }
+            h1 {
+               font-size: 54px;
+            }
+         }
+         &_data {
+            h2 {
+               font-size: 34px;
+            }
+            h3 {
+               font-size: 14px;
+            }
+         }
+         &_buttons {
+            > a {
+               font-size: 16px;
+               width: 200px;
+               height: 38px;
+            }
+            .contacts__info {
+               a {
+                  height: 38px;
+                  width: 38px;
+                  .icon {
+                     height: 20px;
+                     width: 20px;
+                  }
+               }
+               a:last-child .icon {
+                  height: 24px;
+                  width: 24px;
+               }
+               a:hover {
+                  height: 44px;
+                  width: 44px;
+                  .icon {
+                     fill: white;
+                     height: 24px;
+                     width: 24px;
+                  }
+               }
+               a:last-child:hover {
+                  .icon {
+                     height: 28px;
+                     width: 28px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   @media (orientation: portrait) and (max-width: $md3 + px) {
+      .ring {
+         top: 28vh;
+         height: 90vh;
+         opacity: 0.7;
+         right: -100px;
+      }
+      &__block {
+         &_title {
+            h2 {
+               font-size: 17px;
+            }
+            h1 {
+               font-size: 38px;
+            }
+         }
+         &_data {
+            > div {
+               padding: 0px 8px;
+            }
+            h2 {
+               font-size: 28px;
+            }
+            h3 {
+               font-size: 12px;
+            }
+         }
+         &_buttons {
+            > a {
+               height: 30px;
+               width: 165px;
+               font-size: 14px;
+               margin-right: 30px;
+            }
+            .contacts__info {
+               a {
+                  height: 30px;
+                  width: 30px;
+                  border: 2px solid #f2bb59;
+                  .icon {
+                     height: 16px;
+                     width: 16px;
+                  }
+               }
+               a:last-child .icon {
+                  height: 19px;
+                  width: 19px;
+               }
+               a:hover {
+                  border: 3px solid white;
+                  height: 50px;
+                  width: 50px;
+                  .icon {
+                     fill: white;
+                     height: 30px;
+                     width: 30px;
+                  }
+               }
+               a:last-child:hover {
+                  .icon {
+                     height: 34px;
+                     width: 34px;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   @media (orientation: portrait) and (max-width: $md4 + px) {
+      & {
+         height: 100vh;
+      }
+      .ring {
+         top: 36vh;
+         height: 100vh;
+         right: -100px;
+      }
+      &__block {
+         &_title {
+            h2 {
+               font-size: 12px;
+            }
+            h1 {
+               font-size: 30px;
+            }
+         }
+         &_data {
+            > div {
+               padding: 0px 7px;
+            }
+            > div:first-child {
+               padding-right: 7px;
+            }
+            h2 {
+               font-size: 18px;
+            }
+            h3 {
+               font-size: 9px;
+            }
+         }
+         &_buttons {
+            flex-direction: column;
+            > a {
+               margin-bottom: 20px;
+            }
+         }
+      }
+   }
+}
